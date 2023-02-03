@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+    <string name="digitalStorage">Digital \nStorage</string>
+    <string name="unit_converter">Unit Converter</string>
+    <string name="volume">Volume</string>
+    <string name="time">Time</string>
+    <string name="length">Length</string>
+    <string name="mass">Mass</string>
+    <string name="output">Answer</string>
+    <string name="enter_the_number">Enter the Number</string>
+    <string name="to">To:</string>
+    <string name="cm">CM</string>
+    <string name="m">M</string>
+    <string name="from">From:</string>
+    <string name="Volume">Volume </string>
+</resources>
