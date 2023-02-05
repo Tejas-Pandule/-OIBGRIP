@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinningActivity"
+   android:background="@color/UiColor"
+    >
+
+   <RelativeLayout
+       android:id="@+id/toolBar"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+     android:background="#2F0137">
+
+<!--       <TextView-->
+<!--           android:id="@+id/txtExit"-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:text="EXIT"-->
+<!--           android:layout_alignParentEnd="true"-->
+<!--           android:layout_centerVertical="true"-->
+<!--           android:textSize="30sp"-->
+<!--           android:fontFamily="sans-serif-condensed"-->
+<!--           android:textColor="@color/white"-->
+<!--           android:layout_marginEnd="15dp"-->
+<!--           android:layout_marginTop="15dp"/>-->
+
+
+       <ImageView
+           android:id="@+id/btnBack"
+           android:layout_width="40dp"
+           android:layout_height="33dp"
+           android:src="@drawable/baseline_arrow_back_ios_24"
+           android:layout_centerVertical="true"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="15dp"/>
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Scoreboard"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_below="@id/toolBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cpb_background_progressbar_color="@color/red"
+            app:cpb_background_progressbar_width="10dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/green"
+            app:cpb_progressbar_width="10dp"
+            app:cpb_round_border="false"
+            app:cpb_progress_max="20"
+            />
+
+
+        <TextView
+            android:id="@+id/ScoreBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="15/20"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/Scoreboard"
+        android:id="@+id/crdNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="70dp"
+        android:elevation="7dp"
+        android:backgroundTint="#00BCD4">
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Your Score"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ImageView
+        android:layout_width="202dp"
+        android:layout_height="187dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/cheer" />
+
+
+</RelativeLayout>
